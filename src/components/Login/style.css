@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/assets/img/plano_de_fundo_login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+} 
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#container-content{
+  display: flex;
+  width: auto;
+  align-items: center;
+  margin: 0;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/assets/img/login-hero-login-content-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+
+  box-shadow: -10px 5px 30px rgba(54, 35, 35, 0.616);
+}
+
+#container-login{
+  height: 460px;
+  width: 302px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 20px 0 0;
+  font-family: 'title';
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#logo {
+  color: #cf000f;
+  font-weight: 800;
+}
+
+#logo strong:last-of-type {
+  color: #f3f3f3;
+}
+
+#logo small {
+  font-size: 0.9rem;
+  color: #436577;
+  margin-left: 2px;
+}
+
+.login-button {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'title';
+    font-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    background-color: #ececec;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .login-button img {
+    width: 30px;
+    border-right: 1px solid #999;
+    padding-right: 5px;
+  }
+
+  .login-button span {
+    margin: 0 auto;
+  } 
+
+@media screen and (max-width: 800px) {
+  #container-content{
+    width: 90%;
+  }
+
+  #img-login{
+    width: 50%;
+  }
+
+  #container-login{
+    width: 50%;
+  } 
+
+
+}
+
+@media screen and (max-width:550px) {
+  body {
+    background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/assets/img/login-hero-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+  } 
+
+  #container-login{
+    width: 100%;
+  }
+
+  #container-content{
+    background-image: none;
+    box-shadow: none;
+  }
+
+  #img-login{
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .login-button{
+    width: 200px;
+    font-size: 80%;
+  }
+}

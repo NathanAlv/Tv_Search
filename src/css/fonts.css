@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'title';
+    src: url(/assets/fonts/Raleway-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'regular';
+    src: url(/assets/fonts/KdamThmorPro-Regular.ttf);
+  }

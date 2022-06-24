@@ -1,0 +1,200 @@
+#search-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #cf000f;
+}
+
+#search-area {
+  font-family: 'title';
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#nav-left {
+  display: flex;
+  width: auto;
+  align-items: center;
+  margin: 0 auto 0 0;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 20px 0 0;
+}
+
+#logo strong:first-child {
+  color: ivory;
+}
+
+#logo strong:last-of-type {
+  color: white;
+}
+
+#logo small {
+  font-size: 0.9rem;
+  color: #436577;
+  margin-left: 2px;
+}
+
+#user-photo img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+#nav-right {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+#search-container span {
+  color: #fff;
+  text-align: center;
+}
+
+#search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+#search-form input {
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  font-family: 'regular';
+  font-size: 100%;
+}
+
+#search-form button {
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #fff;
+  background-color: var(--btn-color);
+  font-family: 'title';
+  font-size: 85%;
+  height: 30px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#navegation {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#home {
+  margin-right: 10px;
+}
+
+#favorites {
+  margin: 0 10px;
+}
+
+#logout {
+  margin-left: 10px;
+}
+
+#logout span{
+  color: ivory;
+}
+
+@media screen and (max-width: 1250px) {
+
+  #search-form input {
+      width: 250px;
+  }
+}
+
+@media screen and (max-width:1050px) {
+
+  #search-area {
+      flex-direction: column;
+  }
+
+  #nav-left {
+      width: 550px;
+
+      margin: 0 auto 20px auto;
+  }
+
+  #logo{
+      margin: 0 auto 0 0;
+  }
+
+  #user-photo img {
+      height: 40px;
+      margin: 0 0 0 10px;
+  }
+
+  #user-name {
+      margin-left: 15px;
+  }
+
+  #nav-right {
+      width: 550px;
+      justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #app {
+      width: 100%;
+  }
+
+  #nav-left {
+      max-width: 100%;
+      margin-bottom: 10px;
+  }
+
+  #logo-photo img {
+      height: 30px;
+  }
+
+  #nav-right {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  #search-form input {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+  }
+
+  #search-form button {
+      display: block;
+      margin: 0;
+  }
+
+  #navegation {
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #nav-left{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+  
