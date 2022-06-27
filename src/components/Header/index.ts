@@ -1,4 +1,4 @@
-import searchTVShows from '../../utils/SearchShow'
+import searchTVShows from '../../Utils/SearchShow'
 import './style.css'
 
 searchTVShows()
